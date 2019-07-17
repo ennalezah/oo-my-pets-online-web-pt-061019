@@ -54,9 +54,7 @@ class Owner
     all_pets = self.cats.concat(self.dogs)
     
     all_pets.each do |pet|
-      binding.pry
       pet.mood = "nervous"
-      
       pet.owner = nil
     end
     @cats.clear
