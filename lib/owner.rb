@@ -15,7 +15,7 @@ class Owner
     
     @cats = []
     @dogs = []
-    @all_pets = self.cats.concat(self.dogs)
+    @all_pets = @cats.concat(@dogs)
   end
   
   def say_species
