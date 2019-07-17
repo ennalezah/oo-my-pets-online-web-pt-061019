@@ -1,5 +1,5 @@
 class Owner
-  attr_reader :name, :species, :all_pets
+  attr_reader :name, :species
   attr_accessor :cats, :dogs
   
   @@all = []
@@ -50,7 +50,7 @@ class Owner
   end
   
   def sell_pets
-    # all_pets = self.cats.concat(self.dogs)
+    all_pets = self.cats.concat(self.dogs)
     
     all_pets.each do |pet|
       pet.mood = "nervous"
