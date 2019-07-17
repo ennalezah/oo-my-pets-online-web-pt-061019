@@ -58,6 +58,4 @@ class Owner
     @cats.clear
     @dogs.clear
   end
-  
-  
 end
