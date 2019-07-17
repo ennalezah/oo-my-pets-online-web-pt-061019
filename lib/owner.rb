@@ -52,9 +52,10 @@ class Owner
   
   def sell_pets
     all_pets = self.cats.concat(self.dogs)
-    binding.pry
+    
     all_pets.each do |pet|
       pet.mood = "nervous"
+      binding.pry
       # pet.owner = nil
     end
     # @cats.clear
