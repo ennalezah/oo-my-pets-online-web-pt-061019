@@ -51,7 +51,8 @@ class Owner
   end
   
   def sell_pets
-    @all_pets.each do |pet|
+    all_pets = @cats.concat(@dogs)
+    all_pets.each do |pet|
       pet.mood = "nervous"
       pet.owner = nil
     end
