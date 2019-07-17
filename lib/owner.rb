@@ -2,7 +2,7 @@ require 'pry'
 
 class Owner
   attr_reader :name, :species
-  attr_accessor :cats, :dogs, :all_pets
+  attr_accessor :cats, :dogs
   
   @@all = []
   @@count = 0
@@ -15,7 +15,6 @@ class Owner
     
     @cats = []
     @dogs = []
-    @all_pets = @cats.concat(@dogs)
   end
   
   def say_species
